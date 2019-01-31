@@ -7,3 +7,9 @@ docker rmi ec7e75e5260c（镜像名称）
 
 3、首先查看php容器的IP地址
 docker inspect myphp --format='{{.NetworkSettings.IPAddress}}'
+
+4、显示所有镱像（可用）
+docker ps 
+
+5、显示所有镜像（全部）
+docker ps -a
