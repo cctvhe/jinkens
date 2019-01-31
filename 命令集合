@@ -1,0 +1,2 @@
+进入容器
+docker exec -it nginx（容器名称） /bin/bash（进入默认路径）
