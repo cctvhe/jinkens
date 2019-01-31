@@ -1,5 +1,9 @@
+
 1、进入容器
 docker exec -it nginx（容器名称） /bin/bash（进入默认路径）
 
 2、删除镱像
 docker rmi ec7e75e5260c（镜像名称）
+
+3、首先查看php容器的IP地址
+docker inspect myphp --format='{{.NetworkSettings.IPAddress}}'
