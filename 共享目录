@@ -1,0 +1,8 @@
+新建挂载目录
+mkdir /mnt/shared
+
+挂载文件
+mount -t vboxsf BaiduShare /mnt/shared
+
+卸载
+umount -f /mnt/shared
