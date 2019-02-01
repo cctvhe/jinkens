@@ -1,0 +1,24 @@
+在centos系统中，如果/sbin目录下没有service这个命令，就会出现
+
+bash: service: command not found
+1
+解决步骤如下： 
+1、 输入
+
+yum list | grep initscripts
+1
+会出现：
+
+initscripts.x86_64
+1
+（其实一共有三个信息，但是后面根据版本不同，显示的信息也不同） 
+2、 上面给出了可安装软件的yum源版本，然后执行
+
+yum install initscripts -y
+1
+3、 此时service命令就可用了
+--------------------- 
+作者：qq_14847537 
+来源：CSDN 
+原文：https://blog.csdn.net/qq_14847537/article/details/78400333 
+版权声明：本文为博主原创文章，转载请附上博文链接！
