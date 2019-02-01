@@ -31,3 +31,6 @@ docker rm 镜像ID
 
 8、容器文件拷贝到宿主机
 docker cp 8b746661e14b:/opt/bitnami/php/etc/php.ini php.ini
+
+9、修改image的tag
+docker tag 9b4553def3e0 linux
