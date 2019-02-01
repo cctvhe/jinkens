@@ -28,3 +28,6 @@ docker start 镜像ID
 
 7、删除容器
 docker rm 镜像ID
+
+8、容器文件拷贝到宿主机
+docker cp 8b746661e14b:/opt/bitnami/php/etc/php.ini php.ini
