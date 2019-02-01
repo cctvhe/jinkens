@@ -36,4 +36,4 @@ docker cp 8b746661e14b:/opt/bitnami/php/etc/php.ini php.ini
 docker tag 9b4553def3e0 linux
 
 10、进入容器
-docker run -t -i linux  /bin/bash
+docker run --name xx --privileged  -t -i linux  /bin/bash
