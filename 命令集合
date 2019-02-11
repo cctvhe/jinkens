@@ -37,3 +37,6 @@ docker tag 9b4553def3e0 linux
 
 10、进入容器
 docker run --name xx --privileged  -t -i linux  /bin/bash
+
+11、启动容器
+docker run --name hezhigang -p 80:80 -p 8080:8080 -p 9000:9000 -v /hezhigang:/hezhigang -v /owner:/owner --privileged  -it linux  /bin/bash
