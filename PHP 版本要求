@@ -20,3 +20,5 @@ As well, ensure PHP version under require is set to 7.0.0 as shown below in conf
      }
 Run composer install using CMD
 This now will make sure that only dependencies compatible with php7.0 are installed.
+
+https://stackoverflow.com/questions/48787078/laravel-5-parse-error-syntax-error-unexpected-expecting-variable-t-var
