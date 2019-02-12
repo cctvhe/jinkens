@@ -4,7 +4,16 @@
 1、删除镱像
 docker rmi ec7e75e5260c（镜像名称）
 
+2、导出镜像
+如果要存出镜像到本地文件，可以使用docker save命令。例如，存出本地的ubuntu:14.04镜像为文件ubuntu_14.04.tar：
+$ sudo docker save -o /home/user/images/ubuntu_14.04.tar ubuntu:14.04
 
+3、导入镜像
+可以使用docker load从存出的本地文件中再导入到本地镜像库，例如从文件ubuntu_14.04.tar导入镜像到本地镜像列表，如下所示：
+$ sudo docker load --input ubuntu_14.04.tar
+
+4、dockfile生成镱像
+docker build -t linux .
 
 二、容器
 
