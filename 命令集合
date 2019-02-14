@@ -52,3 +52,6 @@ docker run --name hezhigang -p 80:80 -p 8080:8080 -p 9000:9000 -v /hezhigang:/he
 
 12、重启容器
 /etc/init.d/docker restart
+
+13、删除所有容器
+docker rm `docker ps -a -q`
